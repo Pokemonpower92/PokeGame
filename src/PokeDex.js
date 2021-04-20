@@ -18,11 +18,26 @@ class PokeDex extends Component {
     };
 
     render(){
+        const { pokemon, score, winner } = this.props;
+        let hurah;
+
+        if(winner) {
+            hurah = <div className="PokeDex-winner">
+                        <h1>Winner!</h1>
+                        <h2>Total EXP: {score}</h2>
+                    </div>
+        } else {
+            hurah = <div className="PokeDex-loser">
+                        <h1>Loser!</h1>
+                        <h2>Total EXP: {score}</h2>
+                    </div>
+        }
+
         return(
             <div className="PokeDex">
-                <h1>Pokedex</h1>
+                {hurah}
                 <div className="PokeDex-cards">
-                    {this.props.pokemon.map(p => (
+                    {pokemon.map(p => (
                         <PokeCard
                             name={p.name}
                             number={p.number}

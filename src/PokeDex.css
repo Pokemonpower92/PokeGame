@@ -1,6 +1,19 @@
 .PokeDex {
+    font-size: .6rem;
+    padding: 5px;
+    margin: 12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: #4d4d4d;
+}
 
+.PokeDex-winner {
+    color: #eceff1;
+}
 
+.PokeDex-loser {
+    color: #eceff1;;
 }
 
 .PokeDex-cards {
