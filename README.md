@@ -1,3 +1,3 @@
 # Pokegame
 
-Quick and dirty react app that's just for personal learning.
+React app that deals two random hands of pokemon 'cards' and determins the winner. 

@@ -41,6 +41,7 @@ class PokeGame extends Component {
         const handTwo = getHand(handSize, pokemon);
         const scoreOne = calcScore(handOne);
         const scoreTwo = calcScore(handTwo);
+        const draw = scoreOne === scoreTwo;
 
         return(
             <div className="PokeGame">
@@ -48,11 +49,13 @@ class PokeGame extends Component {
                     pokemon={handOne}
                     score={scoreOne}
                     winner={scoreOne > scoreTwo}
+                    draw={draw}
                 />
                 <PokeDex 
                     pokemon={handTwo}
                     score={scoreTwo}
                     winner={scoreTwo > scoreOne}
+                    draw={draw}
                 />
             </div>
         )

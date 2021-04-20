@@ -19,15 +19,19 @@ class PokeCard extends Component {
         return(
             <div className="PokeCard">
                 <div className="PokeCard-title">
-                <h1> {name} </h1>
+                    <h1> {name} </h1>
                 </div>
-                <img 
-                    src={getImg(number)}
-                    alt='Pokeimage'
-                    >
-                </img>
-                <div>Type: {type} </div>
-                <div>Exp: {exp} </div>
+                <div className="PokeCard-image">
+                    <img 
+                        src={getImg(number)}
+                        alt='Pokeimage'
+                        >
+                    </img>
+                </div>
+                <div className="PokeCard-info">
+                    <div>Type: {type}</div>
+                    <div>Exp: {exp} </div>
+                </div>
             </div>
         )
     }

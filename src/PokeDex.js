@@ -18,7 +18,7 @@ class PokeDex extends Component {
     };
 
     render(){
-        const { pokemon, score, winner } = this.props;
+        const { pokemon, score, winner, draw} = this.props;
         let hurah;
 
         if(winner) {
@@ -29,6 +29,13 @@ class PokeDex extends Component {
         } else {
             hurah = <div className="PokeDex-loser">
                         <h1>Loser!</h1>
+                        <h2>Total EXP: {score}</h2>
+                    </div>
+        }
+
+        if(draw) {
+            hurah = <div className="PokeDex-winner">
+                        <h1>Draw!</h1>
                         <h2>Total EXP: {score}</h2>
                     </div>
         }

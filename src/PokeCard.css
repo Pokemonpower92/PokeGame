@@ -11,3 +11,24 @@
 .PokeCard-title {
     text-emphasis: bold;
 }
+
+.PokeCard-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    background-color: gray;
+    border-radius: 7px;
+}
+
+.PokeCard-info {
+    font-size: 1rem;
+}
+
+.PokeCard img:hover {
+    transition: all ease 500ms;
+}
+
+.PokeCard img:hover {
+    transform: scale(1.25);
+}
